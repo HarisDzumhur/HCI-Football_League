@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="FootballLeague.Views.AuthView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FootballLeague.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200" Background="LightGray"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Stretch="Uniform">
+            <Border VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Viewbox Stretch="Uniform">
+                        <StackPanel>
+                            <ComboBox Width="150" 
+                                      Height="30"
+                                      FontSize="15"
+                                      VerticalAlignment="Center"
+                                      HorizontalContentAlignment="Center"
+                                      VerticalContentAlignment="Center"
+                                      Margin="0,50,0,30"
+                                      FontWeight="DemiBold"
+                                      SelectedItem="{Binding SelectedLanguage}"
+                                      ItemsSource="{Binding Languages}"/>
+
+                            <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center" 
+                            Grid.Row="0">
+                                <Button Content="{DynamicResource Login}"
+                            Command="{Binding ShowLoginView}"
+                            BorderBrush="{Binding LoginButtonColor}"
+                            Background="LightGray"
+                            Foreground="{Binding LoginButtonColor}"
+                            BorderThickness="0,0,0,3"
+                            Width="200"
+                            Height="50"
+                            FontWeight="DemiBold"
+                            FontSize="25"
+                            HorizontalAlignment="Center"
+                            Cursor="Hand" 
+                            Margin="0,0,10,0"/>
+
+                                <Button Content="{DynamicResource SignUp}"
+                            Command="{Binding ShowSignUpView}"
+                            Width="200"
+                            Height="50"
+                            FontWeight="DemiBold"
+                            BorderBrush="{Binding SignUpButtonColor}"
+                            Background="LightGray"
+                            Foreground="{Binding SignUpButtonColor}"
+                            BorderThickness="0,0,0,3"
+                            FontSize="25"
+                            HorizontalAlignment="Center"
+                            Cursor="Hand"
+                            Margin="10,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Viewbox>
+
+                    <Viewbox Stretch="Uniform"
+                         Grid.Row="1">
+                        <ContentControl Content="{Binding CurrentLeftPanelView}"/>
+                    </Viewbox>
+                </Grid>
+            </Border>
+        </Viewbox>
+
+        <Viewbox Grid.Column="1" Stretch="Fill">
+        <Border Background="MediumPurple"
+                CornerRadius="80,0,0,80">
+            <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+                <md:PackIcon Kind="Trophy" 
+                             Width="400" 
+                             Height="400" 
+                             Foreground="Gold" 
+                             Margin="30,30,30,0"/>
+
+                <TextBlock Text="{DynamicResource WelcomeBack}"
+                   FontSize="50"    
+                   FontWeight="DemiBold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,30" />
+            </StackPanel>
+        </Border>
+        </Viewbox>
+    </Grid>
+</UserControl>

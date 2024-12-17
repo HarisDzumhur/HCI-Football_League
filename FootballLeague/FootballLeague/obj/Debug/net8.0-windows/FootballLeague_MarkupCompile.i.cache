@@ -1,0 +1,20 @@
+﻿FootballLeague
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\
+FootballLeague
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\App.xaml
+30-1465065080
+
+80-1664875096
+2121505459114
+MainWindow.xaml;PopUpComponents\PopUpWindows\AddLeagueWindow.xaml;PopUpComponents\PopUpWindows\AddMatchdayWindow.xaml;PopUpComponents\PopUpWindows\AddSeasonWindow.xaml;PopUpComponents\PopUpWindows\MessageBoxWindow.xaml;Resources\CustomThemes\BlueTheme.xaml;Resources\CustomThemes\GreenTheme.xaml;Resources\CustomThemes\PurpleTheme.xaml;Resources\CustomThemes\RedTheme.xaml;Resources\FontStyles\CalibriFontStyle.xaml;Resources\FontStyles\ComicSansMSFontStyle.xaml;Resources\FontStyles\TimesNewRomanFontStyle.xaml;Resources\Languages\Resources.bs-BA.xaml;Resources\Languages\Resources.en-GB.xaml;Views\AccountsView.xaml;Views\AdministratorGamesView.xaml;Views\AdministratorHomeView.xaml;Views\AdministratorPlayerStatisticsView.xaml;Views\AdministratorPlayerView.xaml;Views\AdministratorTeamView.xaml;Views\AuthView.xaml;Views\FavouritesView.xaml;Views\GamesView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\PlayerView.xaml;Views\SettingsView.xaml;Views\SignUpView.xaml;Views\TableView.xaml;Views\TeamView.xaml;
+
+False
+

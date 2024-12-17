@@ -1,0 +1,437 @@
+﻿<UserControl x:Class="FootballLeague.Views.AdministratorTeamView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FootballLeague.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200" Background="LightGray"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:converter="clr-namespace:FootballLeague.Core"
+             Style="{DynamicResource GlobalFontStyle}">
+    <UserControl.Resources>
+        <converter:ByteArrayToImageConverter x:Key="ByteArrayToImageConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.75*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Border Background="{DynamicResource PrimaryBrush}" 
+            CornerRadius="0,50,50,0">
+            <Viewbox Stretch="Uniform">
+                <StackPanel Margin="20"
+                        VerticalAlignment="Center">
+                    <Button Command="{Binding BackCommand}"
+                        Style="{DynamicResource PrimaryButtonStyle}"
+                        FontSize="15"
+                        FontWeight="DemiBold"
+                        Background="{DynamicResource PrimaryBrush}"
+                        Height="50"
+                        Width="50"
+                        Cursor="Hand"
+                        HorizontalAlignment="Left">
+                        <md:PackIcon Kind="ArrowBack"
+                                 Foreground="{DynamicResource PrimaryTextBrush}"
+                                 Width="30"
+                                 Height="30"/>
+                    </Button>
+                    <Border BorderThickness="2"
+                        BorderBrush="{DynamicResource PrimaryTextBrush}"
+                        CornerRadius="10"
+                        HorizontalAlignment="Center">
+                        <Image Source="{Binding SelectedImage, UpdateSourceTrigger=PropertyChanged,Converter={StaticResource ByteArrayToImageConverter}}"
+                           Width="100"
+                           Height="100"
+                           Stretch="UniformToFill"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" />
+
+                    </Border>
+                    <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Center"
+                            Margin="0,20,0,40">
+                        <Button Command="{Binding AddImageCommand}"
+                            Margin="0,0,10,0"
+                            Style="{DynamicResource PrimaryButtonStyle}"
+                            FontSize="15"
+                            FontWeight="DemiBold"
+                            Background="{DynamicResource PrimaryBrush}"
+                            Height="50"
+                            Width="50"
+                            Cursor="Hand">
+                            <md:PackIcon Kind="ImagePlus"
+                                     Foreground="{DynamicResource PrimaryTextBrush}"
+                                     Width="30"
+                                     Height="30"/>
+                        </Button>
+                        <Button Command="{Binding RemoveImageCommand}"
+                            Style="{DynamicResource PrimaryButtonStyle}"
+                            FontSize="15"
+                            FontWeight="DemiBold"
+                            Background="{DynamicResource PrimaryBrush}"
+                            Height="50"
+                            Width="50"
+                            Cursor="Hand">
+                            <md:PackIcon Kind="RemoveCircle"
+                                     Foreground="{DynamicResource PrimaryTextBrush}"
+                                     Width="30"
+                                     Height="30"/>
+                        </Button>
+                    </StackPanel>
+
+                    <TextBlock Text="{DynamicResource RequestDate}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center" 
+                           Margin="0,0,0,10"/>
+                    <DatePicker Width="200"
+                            Background="{DynamicResource PrimaryBrush}"
+                            HorizontalAlignment="Center"
+                            SelectedDate="{Binding SelectedDate, UpdateSourceTrigger=PropertyChanged}"
+                            Margin="0,0,0,20"
+                            Focusable="False"/>
+
+                    <TextBlock Text="{DynamicResource RequestName}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center" 
+                           Margin="0,0,0,10"/>
+                    <TextBox Height="40"
+                         Foreground="{DynamicResource PrimaryTextBrush}"
+                         FontSize="20"
+                         FontWeight="DemiBold"
+                         Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Margin="0,0,0,20"/>
+                    <TextBlock Text="{DynamicResource RequestCity}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                    <TextBox Height="40"
+                         Foreground="{DynamicResource PrimaryTextBrush}"
+                         FontSize="20"
+                         FontWeight="DemiBold"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center" 
+                         Margin="0,0,0,20"
+                         Text="{Binding City, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{DynamicResource RequestCoach}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                    <TextBox Height="40"
+                         Foreground="{DynamicResource PrimaryTextBrush}"
+                         FontSize="20"
+                         FontWeight="DemiBold"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Margin="0,0,0,20"
+                         Text="{Binding Coach, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{DynamicResource RequestTrophies}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                    <TextBox Height="40"
+                         Foreground="{DynamicResource PrimaryTextBrush}"
+                         FontSize="20"
+                         FontWeight="DemiBold"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Margin="0,0,0,20"
+                         Text="{Binding TrophiesCount, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="{DynamicResource RequestStadium}"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontSize="20"
+                           FontWeight="DemiBold"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,10"/>
+                    <TextBox Height="40"
+                         Foreground="{DynamicResource PrimaryTextBrush}"
+                         FontSize="20"
+                         FontWeight="DemiBold"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Margin="0,0,0,20"
+                         Text="{Binding Stadium, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Button Command="{Binding AddTeamCommand}"
+                        Margin="0,20,0,0"
+                        Style="{DynamicResource PrimaryButtonStyle}"
+                        FontSize="25"
+                        FontWeight="DemiBold"
+                        Background="{DynamicResource HeaderBrush}"
+                        Width="350"
+                        Height="80"
+                        BorderThickness="3"
+                        Cursor="Hand">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <md:PackIcon Kind="Plus"
+                            Foreground="{DynamicResource ButtonForegroundBrush}"
+                            Width="50"
+                            Height="50"
+                            Margin="0,0,10,0"
+                            VerticalAlignment="Center" />
+                            <TextBlock Text="{DynamicResource AddTeam}"
+                            VerticalAlignment="Center"
+                            Foreground="{DynamicResource ButtonForegroundBrush}" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Viewbox>
+        </Border>
+
+        <Border Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*" />
+                    <RowDefinition Height="0.04*" />
+                    <RowDefinition Height="0.76*" />
+                    <RowDefinition Height="0.1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.9*" />
+                    <ColumnDefinition Width="0.05*" />
+                </Grid.ColumnDefinitions>
+
+                <Viewbox Stretch="Uniform"
+                         Grid.Column="1"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center"
+                         Margin="10">
+                <TextBlock Text="{DynamicResource FC}"
+                           Foreground="{DynamicResource PrimaryBrush}"
+                           FontSize="40"
+                           FontWeight="DemiBold"/>
+                </Viewbox>
+                
+                <Border Grid.Row="1"
+                        Grid.Column="1" 
+                        Background="{DynamicResource HeaderBrush}" 
+                        CornerRadius="10,10,0,0">
+                    <Viewbox Stretch="Uniform">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="150" />
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="180" />
+                                <ColumnDefinition Width="60" />
+                                <ColumnDefinition Width="240" />
+                                <ColumnDefinition Width="60" />
+                                <ColumnDefinition Width="60" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0"
+                                   Text="{DynamicResource Logo}" 
+                                   FontSize="12"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontWeight="DemiBold" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="1"
+                                   Text="{DynamicResource Name}" 
+                                   FontSize="12"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="2" 
+                                   Text="{DynamicResource City}" 
+                                   FontSize="12"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="3"
+                                  Text="{DynamicResource Established}" 
+                                  FontSize="12"
+                                  Foreground="{DynamicResource PrimaryTextBrush}"
+                                  FontWeight="DemiBold"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="4"
+                       Text="{DynamicResource Coach}" 
+                       FontSize="12"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
+                       FontWeight="DemiBold"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="5"
+                       Text="{DynamicResource Trophies}" 
+                       FontSize="12"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
+                       FontWeight="DemiBold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="6"
+                       Text="{DynamicResource Stadium}" 
+                       FontSize="12"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
+                       FontWeight="DemiBold"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="7"
+                       Text="{DynamicResource Delete}" 
+                       FontSize="12"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
+                       FontWeight="DemiBold"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="8"
+                       Text="{DynamicResource Players}" 
+                       FontSize="12"
+                       Foreground="{DynamicResource PrimaryTextBrush}"
+                       FontWeight="DemiBold"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center"/>
+                        </Grid>
+                    </Viewbox>
+                </Border>
+
+                <Border Grid.Row="2"
+                        Grid.Column="1" 
+                        Background="{DynamicResource PrimaryBrush}" 
+                        CornerRadius="0,0,10,10">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                                    HorizontalScrollBarVisibility="Disabled"
+                                    PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                        <Viewbox Stretch="Uniform" 
+                                VerticalAlignment="Top">
+                            <ListView ItemsSource="{Binding Teams, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0,5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="200" />
+                                                <ColumnDefinition Width="150" />
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="180" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="240" />
+                                                <ColumnDefinition Width="60" />
+                                                <ColumnDefinition Width="60" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid Grid.Column="0">
+                                                <Image Source="{Binding Logo, Converter={StaticResource ByteArrayToImageConverter}}" 
+                                       Width="100"
+                                       Height="100" 
+                                       Stretch="Uniform"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="1">
+                                                <TextBlock Text="{Binding Name}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="2">
+                                                <TextBlock Text="{Binding City}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="3">
+                                                <TextBlock Text="{Binding EstablishmentDate, StringFormat='dd-MM-yyyy'}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="4">
+                                                <TextBlock Text="{Binding Coach}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="5">
+                                                <TextBlock Text="{Binding TrophiesCount}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="6">
+                                                <TextBlock Text="{Binding Stadium}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                            </Grid>
+
+                                            <Grid Grid.Column="7">
+                                                <Button Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType={x:Type ListView}}}"
+                                                CommandParameter="{Binding}"
+                                                Width="60"
+                                                Height="60"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Style="{StaticResource MaterialDesignFlatButton}" >
+                                                    <md:PackIcon Kind="{Binding DeleteIcon}"
+                                             Width="30" 
+                                             Height="30" 
+                                             Foreground="DarkRed" />
+                                                </Button>
+                                            </Grid>
+
+                                            <Grid Grid.Column="8">
+                                                <Button Command="{Binding DataContext.ShowPlayersCommand, RelativeSource={RelativeSource AncestorType={x:Type ListView}}}"
+                                                CommandParameter="{Binding}"
+                                                Width="60"
+                                                Height="60"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Style="{StaticResource MaterialDesignFlatButton}" >
+                                                    <md:PackIcon Kind="{Binding PlayersIconAdd}"
+                                                Width="30" 
+                                                Height="30" 
+                                                Foreground="{DynamicResource PrimaryTextBrush}" />
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Viewbox>
+                    </ScrollViewer>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

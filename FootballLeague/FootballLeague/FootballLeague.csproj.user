@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="PopUpComponents\PopUpWindows\AddLeagueWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PopUpComponents\PopUpWindows\AddMatchdayWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PopUpComponents\PopUpWindows\AddSeasonWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PopUpComponents\PopUpWindows\MessageBoxWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AccountsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorGamesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorHomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorPlayerStatisticsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorPlayerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AdministratorTeamView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AuthView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FavouritesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GamesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LoginView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PlayerView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SettingsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SignUpView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TableView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TeamView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PopUpComponents\PopUpWindows\AddLeagueWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PopUpComponents\PopUpWindows\AddMatchdayWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PopUpComponents\PopUpWindows\AddSeasonWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PopUpComponents\PopUpWindows\MessageBoxWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\FontStyles\ComicSansMSFontStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\CustomThemes\BlueTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\CustomThemes\GreenTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\CustomThemes\PurpleTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\CustomThemes\RedTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\FontStyles\TimesNewRomanFontStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\FontStyles\CalibriFontStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Languages\Resources.bs-BA.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Languages\Resources.en-GB.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccountsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorGamesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorHomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorPlayerStatisticsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorPlayerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdministratorTeamView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AuthView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FavouritesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GamesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PlayerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TableView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TeamView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

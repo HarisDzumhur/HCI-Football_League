@@ -1,0 +1,89 @@
+﻿<Application x:Class="FootballLeague.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FootballLeague"
+             xmlns:view="clr-namespace:FootballLeague.Views"
+             xmlns:viewModels="clr-namespace:FootballLeague.ViewModels">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml"/>
+                <ResourceDictionary Source="Resources/CustomThemes/GreenTheme.xaml" />
+                <ResourceDictionary Source="Resources/CustomThemes/RedTheme.xaml" />
+                <ResourceDictionary Source="Resources/CustomThemes/BlueTheme.xaml" />
+                <ResourceDictionary Source="Resources/CustomThemes/PurpleTheme.xaml" />
+                <ResourceDictionary Source="Resources/FontStyles/CalibriFontStyle.xaml" />
+                <ResourceDictionary Source="Resources/Languages/Resources.en-GB.xaml"/>
+                <ResourceDictionary Source="Resources/Languages/Resources.bs-BA.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
+                <view:LoginView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AdministratorTeamViewModel}">
+                <view:AdministratorTeamView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AdministratorGamesViewModel}">
+                <view:AdministratorGamesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AdministratorPlayerViewModel}">
+                <view:AdministratorPlayerView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AdministratorHomeViewModel}">
+                <view:AdministratorHomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AdministratorPlayerStatisticsViewModel}">
+                <view:AdministratorPlayerStatisticsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AccountsViewModel}">
+                <view:AccountsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:HomeViewModel}">
+                <view:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:SignUpViewModel}">
+                <view:SignUpView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:AuthViewModel}">
+                <view:AuthView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:PlayerViewModel}">
+                <view:PlayerView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:TeamViewModel}">
+                <view:TeamView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:GamesViewModel}">
+                <view:GamesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:FavouritesViewModel}">
+                <view:FavouritesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModels:TableViewModel}">
+                <view:TableView/>
+            </DataTemplate>
+            <!--IZ NEKOG RAZLOGA NECE RADITI BINDING AKO NEMA VISE OD JEDNOG TEMPLATE TO JEST PARA VIEW VIEWMODEL-->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

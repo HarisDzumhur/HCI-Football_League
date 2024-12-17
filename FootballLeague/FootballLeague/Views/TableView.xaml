@@ -1,0 +1,313 @@
+﻿<UserControl x:Class="FootballLeague.Views.TableView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FootballLeague.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200" Background="LightGray"
+             xmlns:converter="clr-namespace:FootballLeague.Core"
+             Style="{DynamicResource GlobalFontStyle}">
+    <UserControl.Resources>
+        <converter:ByteArrayToImageConverter x:Key="ByteArrayToImageConverter" />
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="0.04*" />
+            <RowDefinition Height="0.76*" />
+            <RowDefinition Height="0.1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.05*" />
+            <ColumnDefinition Width="0.9*" />
+            <ColumnDefinition Width="0.05*" />
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Grid.Column="1"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Left"
+                 Margin="0,10">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="180">
+                <TextBlock Text="{DynamicResource League}"
+                   FontSize="20"
+                   FontWeight="DemiBold"
+                   Margin="0,0,0,5"
+                   HorizontalAlignment="Center"
+                   Foreground="{DynamicResource PrimaryBrush}"/>
+                <ComboBox HorizontalAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          Width="150"
+                          FontSize="15"
+                          ItemsSource="{Binding Leagues, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedItem="{Binding SelectedLeague}"/>
+
+            </StackPanel>
+
+            <StackPanel Width="180">
+                <TextBlock Text="{DynamicResource Season}"
+                   FontSize="20"
+                   FontWeight="DemiBold"
+                   Margin="0,0,0,5"
+                   HorizontalAlignment="Center"
+                   Foreground="{DynamicResource PrimaryBrush}"/>
+                <ComboBox HorizontalAlignment="Center"
+                          HorizontalContentAlignment="Center"
+                          Width="150"
+                          FontSize="15"
+                          ItemsSource="{Binding Seasons, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedItem="{Binding SelectedSeason}"/>
+
+            </StackPanel>
+        </StackPanel>
+        </Viewbox>
+
+        <Border Grid.Row="1"
+        Grid.Column="1" 
+        Background="{DynamicResource HeaderBrush}" 
+        CornerRadius="10,10,0,0">
+            <Viewbox Stretch="Uniform">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="75" />
+                        <ColumnDefinition Width="75" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0"
+                   Text="{DynamicResource Position}"
+                           FontSize="12"
+                   Foreground="{DynamicResource PrimaryTextBrush}"
+                   FontWeight="DemiBold" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="1"
+                   Text="{DynamicResource Logo}" 
+                           FontSize="12"
+                   Foreground="{DynamicResource PrimaryTextBrush}"
+                   FontWeight="DemiBold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="2" 
+                   Text="{DynamicResource Name}" 
+                           FontSize="12"
+                   Foreground="{DynamicResource PrimaryTextBrush}"
+                   FontWeight="DemiBold"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="3" 
+                           Text="{DynamicResource GamesPlayed}" 
+                           FontSize="12"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontWeight="DemiBold"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="4" 
+                           Text="{DynamicResource Wins}" 
+                           FontSize="12"
+                           Foreground="{DynamicResource PrimaryTextBrush}"
+                           FontWeight="DemiBold"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="5" 
+                            Text="{DynamicResource Loses}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="6" 
+                            Text="{DynamicResource Draws}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="7" 
+                            Text="{DynamicResource GoalsScored}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="8" 
+                            Text="{DynamicResource GoalsConceeded}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="9" 
+                            Text="{DynamicResource GoalDifference}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                    <TextBlock Grid.Column="10" 
+                            Text="{DynamicResource Points}" 
+                            FontSize="12"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            FontWeight="DemiBold"
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center"/>
+                </Grid>
+            </Viewbox>
+        </Border>
+
+        <Border Grid.Row="2"
+        Grid.Column="1" 
+        Background="{DynamicResource PrimaryBrush}" 
+        CornerRadius="0,0,10,10">
+            <ScrollViewer VerticalScrollBarVisibility="Auto"
+              HorizontalScrollBarVisibility="Disabled"
+              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <Viewbox Stretch="Uniform" 
+             VerticalAlignment="Top">
+                    <ListView ItemsSource="{Binding Teams, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="200" />
+                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="75" />
+                                        <ColumnDefinition Width="75" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="0">
+                                        <TextBlock Text="{Binding Position}"
+                                           FontSize="15"
+                                           Foreground="{DynamicResource PrimaryTextBrush}"
+                                           Margin="2,0"
+                                           FontWeight="DemiBold"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1">
+                                        <Image Source="{Binding Logo}" 
+                               Width="100"
+                               Height="100" 
+                               Stretch="Uniform"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="2">
+                                        <TextBlock Text="{Binding Name}"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="3">
+                                        <TextBlock Text="{Binding GamesPlayed}"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="4">
+                                        <TextBlock Text="{Binding Wins}"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="5">
+                                        <TextBlock Text="{Binding Loses}"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="6">
+                                        <TextBlock Text="{Binding Draws}"
+                                   FontSize="15"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="7">
+                                        <TextBlock Text="{Binding GoalsScored}"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontSize="15"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="8">
+                                        <TextBlock Text="{Binding GoalsConceeded}"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontSize="15"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="9">
+                                        <TextBlock Text="{Binding GoalDifference}"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                    FontSize="15"
+                                    Margin="2,0"
+                                    FontWeight="DemiBold"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                                    </Grid>
+
+                                    <Grid Grid.Column="10">
+                                        <TextBlock Text="{Binding Points}"
+                                   Foreground="{DynamicResource PrimaryTextBrush}"
+                                   FontSize="15"
+                                   Margin="2,0"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Viewbox>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

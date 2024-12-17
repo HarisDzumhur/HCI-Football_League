@@ -1,0 +1,130 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <System:String x:Key="UserID">User ID:</System:String>
+    <System:String x:Key="UserID1">User ID</System:String>
+    <System:String x:Key="Username">Username</System:String>
+    <System:String x:Key="Name">Name</System:String>
+    <System:String x:Key="Surname">Surname</System:String>
+    <System:String x:Key="OldPassword">Old password</System:String>
+    <System:String x:Key="NewPassword">New password</System:String>
+    <System:String x:Key="ConfNewPassword">Confirm new password</System:String>
+    <System:String x:Key="Language">Language</System:String>
+    <System:String x:Key="Theme">Theme</System:String>
+    <System:String x:Key="FontStyle">Font style</System:String>
+    <System:String x:Key="SaveChanges">Save changes</System:String>
+
+    <System:String x:Key="League">League</System:String>
+    <System:String x:Key="Season">Season</System:String>
+    <System:String x:Key="Matchday">Matchday</System:String>
+    <System:String x:Key="HomeTeam">Home team</System:String>
+    <System:String x:Key="HomeTeamRequest">Home team:</System:String>
+    <System:String x:Key="Score">Score</System:String>
+    <System:String x:Key="AwayTeam">Away team</System:String>
+    <System:String x:Key="AwayTeamRequest">Away team:</System:String>
+    
+    <System:String x:Key="Tables">Tables</System:String>
+    <System:String x:Key="Matches">Matches</System:String>
+    <System:String x:Key="Teams">Teams</System:String>
+    <System:String x:Key="Favourites">Favourites</System:String>
+    <System:String x:Key="Settings">Settings</System:String>
+    <System:String x:Key="LogOut">Logout</System:String>
+
+    <System:String x:Key="FC">Football clubs</System:String>
+    <System:String x:Key="Logo">Logo</System:String>
+    <System:String x:Key="City">City</System:String>
+    <System:String x:Key="Established">Established</System:String>
+    <System:String x:Key="Coach">Coach</System:String>
+    <System:String x:Key="Stadium">Stadium</System:String>
+    <System:String x:Key="Trophies">Trophies</System:String>
+    <System:String x:Key="Follow">Follow</System:String>
+    <System:String x:Key="Players">Players</System:String>
+    <System:String x:Key="PlayersLowerCase">players</System:String>
+
+    <System:String x:Key="Position">Position</System:String>
+    <System:String x:Key="GamesPlayed">Games played</System:String>
+    <System:String x:Key="Wins">Wins</System:String>
+    <System:String x:Key="Loses">Loses</System:String>
+    <System:String x:Key="Draws">Draws</System:String>
+    <System:String x:Key="GoalsScored">Goals scored</System:String>
+    <System:String x:Key="GoalsScoredRequest">Goals scored:</System:String>
+    <System:String x:Key="GoalsConceeded">Goals conceeded</System:String>
+    <System:String x:Key="GoalDifference">Goal difference</System:String>
+    <System:String x:Key="Points">Points</System:String>
+
+    <System:String x:Key="KitNumber">Kit number</System:String>
+    <System:String x:Key="Age">Age</System:String>
+    <System:String x:Key="MinutesPlayed">Minutes played</System:String>
+    <System:String x:Key="Goals">Goals</System:String>
+    <System:String x:Key="Assists">Assists</System:String>
+    <System:String x:Key="YellowCards">Yellow cards</System:String>
+    <System:String x:Key="RedCards">Red cards</System:String>
+
+    <System:String x:Key="Accounts">Accounts</System:String>
+    <System:String x:Key="Block">Block</System:String>
+    <System:String x:Key="Promote">Promote</System:String>
+    <System:String x:Key="Delete">Delete</System:String>
+    <System:String x:Key="RequestName">Enter the name:</System:String>
+    <System:String x:Key="RequestDate">Enter the establishment date:</System:String>
+    <System:String x:Key="RequestCoach">Enter the coach:</System:String>
+    <System:String x:Key="RequestStadium">Enter the stadium:</System:String>
+    <System:String x:Key="RequestTrophies">Enter the number of trophies:</System:String>
+    <System:String x:Key="RequestCity">Enter the city:</System:String>
+
+    <System:String x:Key="RequestKitNumber">Enter the kit number:</System:String>
+    <System:String x:Key="RequestSurname">Enter the surname:</System:String>
+    <System:String x:Key="RequestAge">Enter the age:</System:String>
+    <System:String x:Key="RequestMinutesPlayed">Enter the number of minutes played:</System:String>
+    <System:String x:Key="RequestGoals">Enter the number of goals:</System:String>
+    <System:String x:Key="RequestAssists">Enter the number of assists:</System:String>
+    <System:String x:Key="RequestYellowCards">Enter the number of yellow cards:</System:String>
+    <System:String x:Key="RequestRedCards">Enter the number of red cards:</System:String>
+
+    <System:String x:Key="GameDateRequest">Date:</System:String>
+    <System:String x:Key="GameRefereeRequest">Referee:</System:String>
+    <System:String x:Key="Cancel">Cancel</System:String>
+    <System:String x:Key="Confirm">Confirm</System:String>
+    <System:String x:Key="RequestLeague">Enter the league name:</System:String>
+    <System:String x:Key="RequestSeason">Enter the season year:</System:String>
+    <System:String x:Key="RequestMatchday">Enter the matchday:</System:String>
+    <System:String x:Key="PickLeague">Pick the league:</System:String>
+    <System:String x:Key="PickSeason">Pick the season:</System:String>
+    <System:String x:Key="GamesCaution">* First choose the league,season and matchday from the right, then add the games</System:String>
+    <System:String x:Key="HomeTeamDetails">Home team details</System:String>
+    <System:String x:Key="AwayTeamDetails">Away team details</System:String>
+
+
+    <System:String x:Key="RequestSignUp">Please sign up to proceed</System:String>
+    <System:String x:Key="SignUp">Sign Up</System:String>
+    <System:String x:Key="RequestLogin">Please login to proceed</System:String>
+    <System:String x:Key="Login">Login</System:String>
+    <System:String x:Key="Role">Choose your role:</System:String>
+    <System:String x:Key="ClassicUser">Classic user</System:String>
+    <System:String x:Key="Administrator">Administrator</System:String>
+    <System:String x:Key="WelcomeBack">Welcome back!</System:String>
+
+    <System:String x:Key="PromptUsername">Enter the username</System:String>
+    <System:String x:Key="PromptName">Enter the name</System:String>
+    <System:String x:Key="PromptSurname">Enter the surname</System:String>
+    <System:String x:Key="PromptPassword">Enter the password</System:String>
+    <System:String x:Key="PromptRepeatPassword">Repeat the password</System:String>
+
+    <System:String x:Key="AddTeam">Add team</System:String>
+    <System:String x:Key="AddGame">Add game</System:String>
+    <System:String x:Key="AddPlayer">Add player</System:String>
+    <System:String x:Key="AddPlayerStatistics">Add player statistics</System:String>
+    <System:String x:Key="PlayerID">Player Id</System:String>
+
+    <System:String x:Key="Starter">Starter</System:String>
+    <System:String x:Key="RedCard">Red card</System:String>
+    <System:String x:Key="YellowCard">Yellow card</System:String>
+    <System:String x:Key="Change">Change</System:String>
+    <System:String x:Key="RequestPlayer">Choose the player:</System:String>
+
+    <System:String x:Key="AddLeague">Add new league</System:String>
+    <System:String x:Key="AddSeason">Add new season</System:String>
+    <System:String x:Key="AddMatchday">Add new matchday</System:String>
+    <System:String x:Key="LastGames">Last three games</System:String>
+    <System:String x:Key="Understood">Understood</System:String>
+</ResourceDictionary>
