@@ -16,8 +16,8 @@
                 <ResourceDictionary Source="Resources/CustomThemes/BlueTheme.xaml" />
                 <ResourceDictionary Source="Resources/CustomThemes/PurpleTheme.xaml" />
                 <ResourceDictionary Source="Resources/FontStyles/CalibriFontStyle.xaml" />
-                <ResourceDictionary Source="Resources/Languages/Resources.en-GB.xaml"/>
-                <ResourceDictionary Source="Resources/Languages/Resources.bs-BA.xaml"/>
+                <ResourceDictionary Source="Resources/Languages/Resources.ENG.xaml"/>
+                <ResourceDictionary Source="Resources/Languages/Resources.BIH.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModels:LoginViewModel}">
@@ -83,7 +83,6 @@
             <DataTemplate DataType="{x:Type viewModels:TableViewModel}">
                 <view:TableView/>
             </DataTemplate>
-            <!--IZ NEKOG RAZLOGA NECE RADITI BINDING AKO NEMA VISE OD JEDNOG TEMPLATE TO JEST PARA VIEW VIEWMODEL-->
         </ResourceDictionary>
     </Application.Resources>
 </Application>

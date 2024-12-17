@@ -1,4 +1,8 @@
-INSERT INTO `FootballLeague`.`POSTAVKE` (`tema`, `jezik`, `font`) VALUES ('Purple', 'en-GB', 'Calibri');
+INSERT INTO `FootballLeague`.`POSTAVKE` (`tema`, `jezik`, `font`) VALUES ('Purple', 'ENG', 'Calibri');
+
+INSERT INTO `FootballLeague`.`KORISNIK` (`ime`, `prezime`, `korisnickoIme`, `lozinka`, `POSTAVKE_idPostavke`, `jeBlokiran`, `jeAdministrator`) VALUES
+ ('Admin', 'Admin', 'root', '$2a$11$iGjTM2kCMvYc9.MsxLsGoeEv5UedT24Vdk.7jgjrKd/BNkMpV4AL6', 1, 0, 1), 
+ ('Korisnik', 'Korisnik', 'korisnik', '$2a$11$MDEwy6tagZkH.4nSsKpA.uUj8hp6YgfrUHEirYB7iPDIqiMTZyfXy', 1, 0, 0);
 
 INSERT INTO `FootballLeague`.`LIGA` (`naziv`) VALUES ('Premier League');
 

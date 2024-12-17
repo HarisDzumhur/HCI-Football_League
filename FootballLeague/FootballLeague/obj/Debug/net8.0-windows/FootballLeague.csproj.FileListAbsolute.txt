@@ -124,8 +124,6 @@ C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\Foo
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\FontStyles\CalibriFontStyle.baml
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\FontStyles\ComicSansMSFontStyle.baml
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\FontStyles\TimesNewRomanFontStyle.baml
-C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\Languages\Resources.bs-BA.baml
-C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\Languages\Resources.en-GB.baml
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Views\HomeView.baml
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Views\LoginView.baml
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\MainWindow.g.cs
@@ -185,3 +183,5 @@ C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\Foo
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\FootballLeague.pdb
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\FootballLeague.genruntimeconfig.cache
 C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\ref\FootballLeague.dll
+C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\Languages\Resources.BIH.baml
+C:\Users\haris\OneDrive\Radna površina\HCI\FootballLeagueApp\FootballLeague\FootballLeague\obj\Debug\net8.0-windows\Resources\Languages\Resources.ENG.baml

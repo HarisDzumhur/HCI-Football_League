@@ -92,7 +92,7 @@ namespace FootballLeague.Repositories
                 command.Parameters.AddWithValue("@Username", user.Username);
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Surname", user.Surname);
-                command.Parameters.AddWithValue("@Password", BCrypt.Net.BCrypt.HashPassword(user.Password));
+                command.Parameters.AddWithValue("@Password", user.Password);
                 command.Parameters.AddWithValue("@IsBlocked", user.IsBlocked);
                 command.Parameters.AddWithValue("@SettingsId", user.SettingsId);
                 command.Parameters.AddWithValue("@IsAdministrator", user.IsAdministrator);

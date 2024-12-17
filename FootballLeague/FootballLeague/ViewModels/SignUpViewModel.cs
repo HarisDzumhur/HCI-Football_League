@@ -60,7 +60,7 @@ namespace FootballLeague.ViewModels
                var user = _userRepository.AddUser(new UserModel
                 {
                     Username = Username,
-                    Password = Password,
+                    Password = BCrypt.Net.BCrypt.HashPassword(Password),
                     PlainPassword = Password,
                     Name = Name,
                     Surname = Surname,

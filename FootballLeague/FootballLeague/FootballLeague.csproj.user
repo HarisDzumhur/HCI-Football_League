@@ -105,10 +105,10 @@
     <Page Update="Resources\FontStyles\CalibriFontStyle.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Resources\Languages\Resources.bs-BA.xaml">
+    <Page Update="Resources\Languages\Resources.BIH.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Resources\Languages\Resources.en-GB.xaml">
+    <Page Update="Resources\Languages\Resources.ENG.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\AccountsView.xaml">

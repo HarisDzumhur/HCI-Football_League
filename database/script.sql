@@ -210,7 +210,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FootballLeague`.`POSTAVKE` (
   `tema` ENUM('Red', 'Blue', 'Green', 'Purple') NOT NULL DEFAULT 'Purple',
-  `jezik` ENUM('en-GB', 'bs-BA') NOT NULL DEFAULT 'bs-BA',
+  `jezik` ENUM('ENG', 'BIH') NOT NULL DEFAULT 'ENG',
   `idPostavke` INT NOT NULL AUTO_INCREMENT,
   `font` ENUM('Comic Sans MS', 'Times New Roman', 'Calibri') NOT NULL DEFAULT 'Calibri',
   PRIMARY KEY (`idPostavke`))
