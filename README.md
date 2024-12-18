@@ -101,3 +101,19 @@ Naredna stavka na meniju omogućava administratoru da dodaje nove timove u siste
 ![Forma za dodavanje timova](https://github.com/user-attachments/assets/554dd389-0bf1-403c-8ccc-fdf00811117d)
 
 
+Sa lijeve strane prikaza administrator može da vidi koje podatke treba da unese za tim. Prvo je ponuđena opcija da odabere grb kluba za koji unosi informacije tako što odabere sliku koja se nalazi na njegovom fajl sistemu. Nakon toga neophodno je da definiše datum kada je klub osnovan, naziv kluba, grad iz kojeg klub dolazi, trener tima, broj trofeja te naziv stadiona na kojem taj klub igra svoje utakmice. U tabeli pored su prikazani svi uneseni podaci, ali pored toga imamo i mogućnost brisanja tima, te pregled igrača koji nastupaju za taj tim. Ako odaberemo tu drugu opciju ona nas vodi na prikaz koji izgleda identično kao na narednoj slici.
+
+
+![Forma za dodavanje igrača](https://github.com/user-attachments/assets/8f03edbd-3dc1-481b-b206-c6a6fdc2fd80)
+
+
+Kako bi administrator mogao da unese novog igrača za taj tim neophodno je da prije toga unese sve podatke koji se od njega zahtjevaju na lijevom dijelu prikaza. Ako potvrdi svoj unos, igrač će biti dodan u tabelu, te se isti može obrisati, kao i svi ostali igrači smješteni u toj tabeli.
+
+### _Postavke aplikacije_
+Pošto su postavke za obe vrste naloga identične onda ćemo o tome segmentu sada nešto više reći. Kako izgleda ovaj dio aplikacije možete da vidite na sljedećoj slici.
+
+
+![Screenshot 2024-12-18 143906](https://github.com/user-attachments/assets/8b611686-1210-4b6d-907b-a20efd57ca0c)
+
+
+Pri samom vrhu korisnik može da vidi svoj identifikator, a ispod toga se nalaze informacije u vezi njegovog imena, prezimena te korisničkog imena, koje može vrlo jednostavno da izmjeni. Dalje slijedi dio koji je vezan za samu mogućnost izmjene lozinke, gdje korisnik mora da unese staru lozinku, kao i novu lozinku ali i da istu ponovo unese iz ranije navedenih razloga. Na dnu se nalaze različite opcije putem kojih korisnik može da prilagodi izgled aplikacije prema svojim željama. Kada govorimo o temama, mislimo na paletu boja koja se primjenjuje na različite UI komponente. Trenutno su podržane 4 teme, a to su ljubičasta, zadana tema, te crvena, plava i zelena. Imamo i opciju za odabir stila fonta, a podržani stilovi su: Calibri, Comic Sans MS i Times New Roman. Kada korisnik završi sa izmjenama iste može da potvrdi klikom na dugme sačuvaj.
