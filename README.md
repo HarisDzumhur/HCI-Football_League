@@ -6,13 +6,13 @@
 Football League je aplikacija sa grafičkim korisničkim interfejsom realizovana u C# programskom jeziku upotrebom WPF (Windows Presentation Foundation) framework-a. Aplikacija koristi MySQL bazu podataka kao primarni način čuvanja svih podataka koji su vezani za ovu aplikaciju. Ova aplikacija ima za cilj da korisniku, prije svega, pruži ugodno korisničko iskustvo, a zatim i mogućnost da prati najbolje svjetske fudbalske lige, klubove i igrače. Za upotrebu aplikacije neophodno je posjednovanje računara (desktop ili laptop) uz odgovarajuće okruženje koje će služiti za pokretanje aplikacije. Veličina ekrana za prikaz aplikacije nije bitan jer se dimenzije aplikacije mogu prilagodi prema preferencijama korisnika.
 
 ### _Prijava na sistem_
-Aplikacija podržava dva tipa korisničkih naloga, nalog za administratora i nalog za klasičnog korisnika. Pokretanjem aplikacije otvara se forma za prijavu korisnika, koja je identična i za klasičnog korisnika i za administratora naše aplikacije a izgleda kao na slici ispod.
+Aplikacija podržava dva tipa korisničkih naloga, nalog za administratora i nalog za klasičnog korisnika. Pokretanjem aplikacije otvara se forma za prijavu korisnika, koja je identična i za klasičnog korisnika i za administratora ove aplikacije a izgleda kao na slici ispod.
 
 
 ![Forma za prijavu](https://github.com/user-attachments/assets/0b54d805-a333-4f97-94d6-07a439fea6e9)
 
 
-Korisnik može odabrati željeni jezik za prijavu putem opcije smještene na vrhu forme. Podrazumjevano je primjenjen engleski jezik ali pored njega postoji i opcija da odabere lokalni jezik. Podaci koji se unose tokom prijave su korisničko ime, koje je jedinstveno na nivou sistema, te lozinka. Nakon tog procesa korisnik mora da odabere režim rada, odnosno mora specifikovati ulogu koju će on imati u sistemu. Ako je nalog koji on posjeduje administratorskog tipa onda može da odabere bilo koju od dvije ponuđene opcije, ali ako je njegov nalog, nalog klasičnog korisnika, njemu se zabranjuje pristup aplikaciji u administratorskom režimu rada. Klikom na dugme Login korisnik pristupa glavnom dijelu aplikacije o kojem će nešto više biti rečeno kasnije.
+Korisnik može odabrati željeni jezik za prijavu putem opcije smještene na vrhu forme. Podrazumjevano je primjenjen engleski jezik ali pored njega postoji i opcija da odabere lokalni jezik. Podaci koji se unose tokom prijave su korisničko ime, koje je jedinstveno na nivou sistema, te lozinka. Nakon tog procesa korisnik mora da odabere režim rada, odnosno mora specifikovati ulogu koju će on imati u sistemu. Ako je nalog koji on posjeduje administratorskog tipa onda može da odabere bilo koju od dvije ponuđene opcije, ali ako je njegov nalog, nalog klasičnog korisnika, njemu se zabranjuje pristup aplikaciji u administratorskom režimu rada. Klikom na dugme za prijavu korisnik pristupa glavnom dijelu aplikacije o kojem će nešto više biti rečeno kasnije.
 
 ### _Registracija korisnika_
 Korisniku se prilikom pokretanja aplikacije podrazumjevano prikazuje forma za prijavu, ali ako korisnik nije registrovan na naš sistem, neophodno je prvo obaviti proces registracije. Forma za registraciju izgleda kao na slici ispod.
@@ -30,9 +30,9 @@ Prikaz koji će korisniku biti predstavljen u slučaju uspješne prijave može d
 ![Početni prikaz](https://github.com/user-attachments/assets/63d6b839-43e9-42d5-b910-39bebba32cb4)
 
 
-Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije. Inicijalno se prikazuje prva opcija koja predstavlja tabelu rezultata timova u okviru neke odabrane lige. Korisnik može da odabere ligu, a potom i konkretnu sezonu u okviru lige, iz combo-box elemenata iznad tabele. Nakon odabira lige i sezone u tabeli je predstavljen trenutni poredak timova po broju bodova. Osim broja bodova korisnik može da vidi i broj odigranih utakmica, broj ostvarenih pobjeda, poraza te nerješenih utakmica, ali i statistiku vezanu za broj postignutih i primljenih golova, kao i gol razliku.
+Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije. Inicijalno se prikazuje prva opcija koja predstavlja tabelu rezultata timova u okviru neke odabrane lige. Korisnik može da odabere ligu, a potom i konkretnu sezonu u okviru lige iz combo-box elemenata iznad tabele. Nakon odabira lige i sezone u tabeli je predstavljen trenutni poredak timova po broju bodova. Osim broja bodova korisnik može da vidi i broj odigranih utakmica, broj ostvarenih pobjeda, poraza te nerješenih utakmica, ali i statistiku vezanu za broj postignutih i primljenih golova, kao i gol razliku.
 
-Neposredno ispod opcije za preled tabele se nalazi opcija za prikaz odigranih utakmica čijim odabirom dobijamo sljedeću formu.
+Neposredno ispod opcije za preled tabele nalazi se opcija za prikaz odigranih utakmica čijim odabirom vidimo sljedeće.
 
 
 ![Prikaz za utakmice](https://github.com/user-attachments/assets/6e7a27fd-e460-4205-bad3-7f829a0c6173)
@@ -46,7 +46,7 @@ Naredna opcija je pregled timova, gdje su tabelarno predstavljene osnovne inform
 ![Prikaz za timove](https://github.com/user-attachments/assets/85cd5398-23a0-4fc8-8be1-7feefe508f81)
 
 
-Za svaki tim iz tabele imamo dva dugmeta. Klikom na prvo dugme, odnosno zvono, korisnik specifikuje da zahtjeva prikaz dodatnih informacija za taj fudbalski klub, odnosno može da se smatra kao neki vid "praćenja" tog kluba. Detaljnije o tome će biti navedeno u narednom pasusu. Drugo dugme korisnika vodi na prikaz igrača koji igraju u tome klubu. Kako to izgleda možete da vidite na sljedećoj slici.
+Za svaki tim iz tabele imamo dva dugmeta. Klikom na prvo dugme, odnosno zvono, korisnik zahtjeva prikaz dodatnih informacija za taj fudbalski klub, odnosno može da se smatra kao neki vid "praćenja" tog kluba. Drugo dugme korisnika vodi na prikaz igrača koji igraju u tome klubu. Kako to izgleda možete da vidite na sljedećoj slici.
 
 
 ![Prikaz za igrače](https://github.com/user-attachments/assets/3ed57719-adf4-4406-9572-4d668764a165)
@@ -54,7 +54,7 @@ Za svaki tim iz tabele imamo dva dugmeta. Klikom na prvo dugme, odnosno zvono, k
 
 Ovaj prikaz korisniku daje uvid u osnovne informacije o igračima u timu ali i njihovoj statistici. Tu obuhvatamo prikaz broja dresa igrača, njegovo ime, prezime i broj godina te broj minuta u dresu tog kluba, broj golova koje je postigao, asistencija koje je podijelio, i broj žutih odnosno crvenih kartona koje je dobio za vrijeme boravka u tom klubu.
 
-Maloprije smo spomenuli za šta služi dugme u obliku zvona ali nismo ulazili u detalje pa je sada red da o tome kažemo nešto više. Praćenje timova omogućava korisniku da vidi u kakvoj su formi njegovi omiljeni timovi, na način da mu se prikazuju rezultati sa posljednjih nekoliko utakmica svakog tima kojeg je on zapratio. Na taj način je korisniku obezbjeđen efikasniji način rada, jer ne mora da pretražuje utakmice u već navedenoj formi za prikaz utakmica. Slika koja slijedi predstavlja izgled prethodno opisane funkcionalnosti.
+Maloprije smo spomenuli za šta služi dugme u obliku zvona ali nismo ulazili u detalje pa je sada red da o tome kažemo nešto više. Praćenje timova omogućava korisniku da vidi u kakvoj su formi njegovi omiljeni timovi, na način da mu se prikazuju rezultati sa posljednjih nekoliko utakmica svakog tima kojeg je on zapratio. Na taj način je korisniku obezbjeđen efikasniji način rada, jer ne mora da pretražuje utakmice u već navedenom prikazu za utakmice. Slika koja slijedi predstavlja izgled prethodno opisane funkcionalnosti.
 
 
 ![Prikaz omiljenih timova](https://github.com/user-attachments/assets/78637034-ed78-401c-8134-6cbab8000450)
@@ -66,13 +66,13 @@ Na kraju samog menija imamo i tipku za odjavu sa sistema koja kada se stisne vod
 Prikaz koji će administratoru biti predstavljen u slučaju uspješne prijave može da se vidi na sljedećoj slici.
 
 
-![Prikaz za naloge](https://github.com/user-attachments/assets/62f6b39f-1821-45e7-a30d-9d162a11d43e)
+![Prikaz za naloge](https://github.com/user-attachments/assets/d9b2117e-4963-4d3a-8e66-021411550a9a)
 
 
-Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije od kojih su neke identične kao kod klasičnog korisnika. Inicijalno se prikazuje tabela koja sadrži sve korisnike našeg sistema, kako klasnične korisnike tako i administratore. Za svakog od njih može da se vidi njegov identifikator, ime, prezime i korisničko ime. Pored toga obezbjeđene su i opcije za blokiranje i promociju korisnika. Blokiranje korisnika je moguće samo ako je on klasičan korisnik, odnosno ne možemo da blokiramo nalog nekog administratora. Promocija korisnika zapravo predstavlja unapređenje naloga korisnika iz standardnog u administratorski, i to je moguće jedino ako korisnik nije trenutno blokiran. To je ujedno i jedini način da se u okviru aplikacije kreira administratorki nalog.
+Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije od kojih su neke identične kao kod klasičnog korisnika. Inicijalno se prikazuje tabela koja sadrži sve korisnike našeg sistema, kako klasnične korisnike tako i administratore. Za svakog od njih može da se vidi identifikator, ime, prezime i korisničko ime. Pored toga obezbjeđene su i opcije za blokiranje i promociju korisnika. Blokiranje korisnika je moguće samo ako je on klasičan korisnik, odnosno ne možemo da blokiramo nalog nekog administratora. Promocija korisnika zapravo predstavlja unapređenje naloga korisnika iz standardnog u administratorski, i to je moguće jedino ako korisnik nije trenutno blokiran. To je ujedno i jedini način da se u okviru aplikacije kreira administratorki nalog.
 
 
-Prva opcija na meniju predstavlja opciju čijim odabirom administrator može da dodaje nove utakmice u bazu podataka. Kako to izgleda možemo da vidimo na slici ispod.
+Naredna opcija na meniju predstavlja opciju čijim odabirom administrator može da dodaje nove utakmice u bazu podataka. Kako to izgleda možemo da vidimo na slici ispod.
 
 
 ![Prikaz za dodavanje utakmica](https://github.com/user-attachments/assets/f54bcfa2-89aa-4c87-a8ec-d02f4b38ca88)
@@ -108,7 +108,7 @@ Kako bi administrator mogao da unese novog igrača za taj tim neophodno je da pr
 Pošto su postavke za obe vrste naloga identične onda ćemo o tome segmentu sada nešto više reći. Kako izgleda ovaj dio aplikacije možete da vidite na sljedećoj slici.
 
 
-![Screenshot 2024-12-18 143906](https://github.com/user-attachments/assets/8b611686-1210-4b6d-907b-a20efd57ca0c)
+![Postavke](https://github.com/user-attachments/assets/839041bf-37e9-49f8-bc1b-6ee50cf06924)
 
 
 Pri samom vrhu korisnik može da vidi svoj identifikator, a ispod toga se nalaze informacije u vezi njegovog imena, prezimena te korisničkog imena, koje može vrlo jednostavno da izmjeni. Dalje slijedi dio koji je vezan za samu mogućnost izmjene lozinke, gdje korisnik mora da unese staru lozinku, kao i novu lozinku ali i da istu ponovo unese iz ranije navedenih razloga. Na dnu se nalaze različite opcije putem kojih korisnik može da prilagodi izgled aplikacije prema svojim željama. Kada govorimo o temama, mislimo na paletu boja koja se primjenjuje na različite UI komponente. Trenutno su podržane 4 teme, a to su ljubičasta, zadana tema, te crvena, plava i zelena. Imamo i opciju za odabir stila fonta, a podržani stilovi su: Calibri, Comic Sans MS i Times New Roman. Kada korisnik završi sa izmjenama iste može da potvrdi klikom na dugme sačuvaj.
