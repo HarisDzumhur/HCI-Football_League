@@ -80,10 +80,9 @@ Prva opcija na meniju predstavlja opciju čijim odabirom administrator može da 
 
 Administrator odabirom opcija iz combo-box komponenata pri vrhu ekrana može da vidi koje utakmice su već unesene za datu ligu, sezonu i kolo. Naravno nije moguće da jedan tim odigra dvije utakmice unutar istog kola u istoj sezoni za istu ligu pa je to ograničenje definisano i u okviru ovog sistema. Kada administrator unese neku utakmicu, ona će zapravo biti unijeta za tu, odabranu ligu, sezonu i kolo. Osim ta tri parametra neophodno je odabrati domaći i gostujući tim, te unijeti broj golova koji je jedni odnosno drugi postigli. Za kraj mora da se specifikuje kada se utakmica odigrala te ko ju je sudio. Takođe, administrator ima mogućnost da dodaje nove lige, sezone i kola, uz pomoć tri dugmeta pozicionirana na lijevoj strani. Odabirom bilo koje od ove tri opcije dolazi do otvaranja novog prozora unutar kojeg je potrebno unijeti adekvatne informacije. Navedeni prozori za unos su prikazani na slikama koje slijede.
 
-
-![Prozor za ligu](https://github.com/user-attachments/assets/d3071546-de5a-4083-862e-719c1f09b1cf)
-![Prozor za sezonu](https://github.com/user-attachments/assets/12fedca2-abe7-4b20-8413-697f5f82b22e)
-![Prozor za kolo](https://github.com/user-attachments/assets/7d99e4b2-0496-4080-b1b8-3ad190b93fe2)
+![Screenshot 2024-12-18 004251](https://github.com/user-attachments/assets/257901cc-acf3-4e9f-8552-b40f91882c4b)
+![Screenshot 2024-12-18 004353](https://github.com/user-attachments/assets/1c09f40c-0f4d-4262-be1d-441b59392014)
+![Screenshot 2024-12-18 004551](https://github.com/user-attachments/assets/219b997e-ff29-4c16-b9d7-170cf62bc9a1)
 
 
 Za svaku utakmicu administrator može da unese i statistiku igrača, kako domaćeg tako i gostujućeg tima. To se ostvaruje klikom na ikonicu u tabeli, koja se nalazi pored naziva tima. Odabirom te opcije možemo da vidimo prikaz kao na sljedećoj slici.
