@@ -125,6 +125,12 @@
     <System:String x:Key="AddLeague">Dodajte novu ligu</System:String>
     <System:String x:Key="AddSeason">Dodajte novu sezonu</System:String>
     <System:String x:Key="AddMatchday">Dodajte novo kolo</System:String>
-    <System:String x:Key="LastGames">Posljednje tri utakmice</System:String>
+    <System:String x:Key="LastGames">Nedavne utakmice</System:String>
     <System:String x:Key="Understood">Razumjem</System:String>
+
+    <System:String x:Key="TitleOne">Naišli smo na problem.</System:String>
+    <System:String x:Key="PrivlegesProblem">Vi nemate takve privilegije.</System:String>
+    <System:String x:Key="InvalidInformation">Korisničko ime ili lozinka nisu validni.</System:String>
+    <System:String x:Key="UsernameTaken">Odabrano korisničko ime već postoji.</System:String>
+    <System:String x:Key="UserBlocked">Blokirani ste od strane jednog od administratora.</System:String>
 </ResourceDictionary>

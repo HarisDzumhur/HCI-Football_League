@@ -85,8 +85,8 @@ namespace FootballLeague.ViewModels
                 var messageBoxWindow = new MessageBoxWindow();
                 var viewModel = new MessageBoxViewModel(new DialogService(messageBoxWindow))
                 {
-                    Title = "We ran into a problem",
-                    Message = "That username is already taken by another user.",
+                    Title = (string)Application.Current.Resources["TitleOne"],
+                    Message = (string)Application.Current.Resources["UsernameTaken"],
                     Icon = PackIconKind.Error
                 };
                 messageBoxWindow.DataContext = viewModel;

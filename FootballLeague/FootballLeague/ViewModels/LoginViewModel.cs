@@ -18,7 +18,7 @@ using System.Windows.Media;
 
 namespace FootballLeague.ViewModels
 {
-    public class LoginViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase, IHandleParameters
     {
         #region Bindings
         public ICommand LoginCommand { get; }
@@ -108,8 +108,8 @@ namespace FootballLeague.ViewModels
                     var messageBoxWindow = new MessageBoxWindow();
                     var viewModel = new MessageBoxViewModel(new DialogService(messageBoxWindow))
                     {
-                        Title = "We ran into a problem",
-                        Message = "You have been blocked by one of the administrators.",
+                        Title = (string)Application.Current.Resources["TitleOne"],
+                        Message = (string)Application.Current.Resources["UserBlocked"],
                         Icon = PackIconKind.Error
                     };
                     messageBoxWindow.DataContext = viewModel;
@@ -122,8 +122,8 @@ namespace FootballLeague.ViewModels
                     var messageBoxWindow = new MessageBoxWindow();
                     var viewModel = new MessageBoxViewModel(new DialogService(messageBoxWindow))
                     {
-                        Title = "We ran into a problem",
-                        Message = "You don't have those kinds of privleges.",
+                        Title = (string)Application.Current.Resources["TitleOne"],
+                        Message = (string)Application.Current.Resources["PrivlegesProblem"],
                         Icon = PackIconKind.Error
                     };
                     messageBoxWindow.DataContext = viewModel;
@@ -156,8 +156,8 @@ namespace FootballLeague.ViewModels
                 var messageBoxWindow = new MessageBoxWindow();
                 var viewModel = new MessageBoxViewModel(new DialogService(messageBoxWindow))
                 {
-                    Title = "We ran into a problem",
-                    Message = "Invalid username or password.",
+                    Title = (string)Application.Current.Resources["TitleOne"],
+                    Message = (string)Application.Current.Resources["InvalidInformation"],
                     Icon = PackIconKind.Error
                 };
                 messageBoxWindow.DataContext = viewModel;
@@ -168,6 +168,12 @@ namespace FootballLeague.ViewModels
         private bool CanExecuteLogin(object parameter)
         {
             return !string.IsNullOrWhiteSpace(Username) && !string.IsNullOrWhiteSpace(Password) && IsAdministrator != null;
+        }
+
+        public void HandleParameters(object? parameters)
+        {
+            ((App)Application.Current).ChangeTheme("Purple");
+            ((App)Application.Current).ChangeFontStyle("Calibri");
         }
     }
 }

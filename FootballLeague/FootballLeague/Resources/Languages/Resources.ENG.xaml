@@ -125,6 +125,12 @@
     <System:String x:Key="AddLeague">Add new league</System:String>
     <System:String x:Key="AddSeason">Add new season</System:String>
     <System:String x:Key="AddMatchday">Add new matchday</System:String>
-    <System:String x:Key="LastGames">Last three games</System:String>
+    <System:String x:Key="LastGames">Recent games</System:String>
     <System:String x:Key="Understood">Understood</System:String>
+
+    <System:String x:Key="TitleOne">We ran into a problem.</System:String>
+    <System:String x:Key="PrivlegesProblem">You don't have those kinds of privleges.</System:String>
+    <System:String x:Key="InvalidInformation">Username or password are invalid.</System:String>
+    <System:String x:Key="UsernameTaken">Chosen username has already been taken.</System:String>
+    <System:String x:Key="UserBlocked">You are blocked by one of the administrators.</System:String>
 </ResourceDictionary>
