@@ -24,10 +24,10 @@ Korisniku se prilikom pokretanja aplikacije podrazumjevano prikazuje forma za pr
 Prilikom procesa registracije od korisnika se zahtjeva da unese osnove podatke o sebi kao što su ime, prezime, korisničko ime i lozinka. Unos lozinke se zahtjeva dva puta, čime se smanjuje broj slučajeva u kojima korisnici naprave nenamjernu grešku prilikom kreiranja vlastitog naloga.
 
 ### _Klasični korisnik_
-Forma koja će korisniku biti prikazana u slučaju uspješne prijave predstavljena je na sljedećoj slici.
+Prikaz koji će korisniku biti predstavljen u slučaju uspješne prijave može da se vidi na sljedećoj slici.
 
 
-![Početna forma](https://github.com/user-attachments/assets/63d6b839-43e9-42d5-b910-39bebba32cb4)
+![Početni prikaz](https://github.com/user-attachments/assets/63d6b839-43e9-42d5-b910-39bebba32cb4)
 
 
 Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije. Inicijalno se prikazuje prva opcija koja predstavlja tabelu rezultata timova u okviru neke odabrane lige. Korisnik može da odabere ligu, a potom i konkretnu sezonu u okviru lige, iz combo-box elemenata iznad tabele. Nakon odabira lige i sezone u tabeli je predstavljen trenutni poredak timova po broju bodova. Osim broja bodova korisnik može da vidi i broj odigranih utakmica, broj ostvarenih pobjeda, poraza te nerješenih utakmica, ali i statistiku vezanu za broj postignutih i primljenih golova, kao i gol razliku.
@@ -35,7 +35,7 @@ Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opc
 Neposredno ispod opcije za preled tabele se nalazi opcija za prikaz odigranih utakmica čijim odabirom dobijamo sljedeću formu.
 
 
-![Forma za utakmice](https://github.com/user-attachments/assets/6e7a27fd-e460-4205-bad3-7f829a0c6173)
+![Prikaz za utakmice](https://github.com/user-attachments/assets/6e7a27fd-e460-4205-bad3-7f829a0c6173)
 
 
 Slično kao kod prethodnog prikaza gdje smo prvo morali da odaberemo ligu i sezonu tako i ovdje moramo da uz to još odaberemo i broj kola. Nakon toga, prikazuju se sve utakmica koje su odigrane u tom kolu, za odabranu sezonu i ligu. Korisnik može jasno da vidi koji su timovi igrali, koji je bio rezultat, ko je sudio tu utakmicu te datum kada je utakmica odigrana.
@@ -43,30 +43,30 @@ Slično kao kod prethodnog prikaza gdje smo prvo morali da odaberemo ligu i sezo
 Naredna opcija je pregled timova, gdje su tabelarno predstavljene osnovne informacije o svim timovima. Pod osnovnim informacijama podrazumjeva se grb, naziv, lokcija, datum osnivanja, broj trofeja, glavni trener kluba i naziv stadiona. Kako to izgleda iz perspektive korisnika prikazano je na slici ispod.
 
 
-![Forma za timove](https://github.com/user-attachments/assets/85cd5398-23a0-4fc8-8be1-7feefe508f81)
+![Prikaz za timove](https://github.com/user-attachments/assets/85cd5398-23a0-4fc8-8be1-7feefe508f81)
 
 
 Za svaki tim iz tabele imamo dva dugmeta. Klikom na prvo dugme, odnosno zvono, korisnik specifikuje da zahtjeva prikaz dodatnih informacija za taj fudbalski klub, odnosno može da se smatra kao neki vid "praćenja" tog kluba. Detaljnije o tome će biti navedeno u narednom pasusu. Drugo dugme korisnika vodi na prikaz igrača koji igraju u tome klubu. Kako to izgleda možete da vidite na sljedećoj slici.
 
 
-![Forma za igrače](https://github.com/user-attachments/assets/3ed57719-adf4-4406-9572-4d668764a165)
+![Prikaz za igrače](https://github.com/user-attachments/assets/3ed57719-adf4-4406-9572-4d668764a165)
 
 
-Ova forma korisniku daje uvid u osnovne informacije o igračima u timu ali i njihovoj statistici. Tu obuhvatamo prikaz broja dresa igrača, njegovo ime, prezime i broj godina te broj minuta u dresu tog kluba, broj golova koje je postigao, asistencija koje je podijelio, i broj žutih odnosno crvenih kartona koje je dobio za vrijeme boravka u tom klubu.
+Ovaj prikaz korisniku daje uvid u osnovne informacije o igračima u timu ali i njihovoj statistici. Tu obuhvatamo prikaz broja dresa igrača, njegovo ime, prezime i broj godina te broj minuta u dresu tog kluba, broj golova koje je postigao, asistencija koje je podijelio, i broj žutih odnosno crvenih kartona koje je dobio za vrijeme boravka u tom klubu.
 
 Maloprije smo spomenuli za šta služi dugme u obliku zvona ali nismo ulazili u detalje pa je sada red da o tome kažemo nešto više. Praćenje timova omogućava korisniku da vidi u kakvoj su formi njegovi omiljeni timovi, na način da mu se prikazuju rezultati sa posljednjih nekoliko utakmica svakog tima kojeg je on zapratio. Na taj način je korisniku obezbjeđen efikasniji način rada, jer ne mora da pretražuje utakmice u već navedenoj formi za prikaz utakmica. Slika koja slijedi predstavlja izgled prethodno opisane funkcionalnosti.
 
 
-![Forma za prikaz omiljenih timova](https://github.com/user-attachments/assets/78637034-ed78-401c-8134-6cbab8000450)
+![Prikaz omiljenih timova](https://github.com/user-attachments/assets/78637034-ed78-401c-8134-6cbab8000450)
 
 
 Na kraju samog menija imamo i tipku za odjavu sa sistema koja kada se stisne vodi korisnika na formu za prijavu na sistem.
 
 ### _Administrator_
-Forma koja će administratoru biti prikazana u slučaju uspješne prijave predstavljena je na sljedećoj slici.
+Prikaz koji će administratoru biti predstavljen u slučaju uspješne prijave može da se vidi na sljedećoj slici.
 
 
-![Forma za naloge](https://github.com/user-attachments/assets/62f6b39f-1821-45e7-a30d-9d162a11d43e)
+![Prikaz za naloge](https://github.com/user-attachments/assets/62f6b39f-1821-45e7-a30d-9d162a11d43e)
 
 
 Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije od kojih su neke identične kao kod klasičnog korisnika. Inicijalno se prikazuje tabela koja sadrži sve korisnike našeg sistema, kako klasnične korisnike tako i administratore. Za svakog od njih može da se vidi njegov identifikator, ime, prezime i korisničko ime. Pored toga obezbjeđene su i opcije za blokiranje i promociju korisnika. Blokiranje korisnika je moguće samo ako je on klasičan korisnik, odnosno ne možemo da blokiramo nalog nekog administratora. Promocija korisnika zapravo predstavlja unapređenje naloga korisnika iz standardnog u administratorski, i to je moguće jedino ako korisnik nije trenutno blokiran. To je ujedno i jedini način da se u okviru aplikacije kreira administratorki nalog.
@@ -75,7 +75,7 @@ Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opc
 Prva opcija na meniju predstavlja opciju čijim odabirom administrator može da dodaje nove utakmice u bazu podataka. Kako to izgleda možemo da vidimo na slici ispod.
 
 
-![Forma za dodavanje utakmica](https://github.com/user-attachments/assets/f54bcfa2-89aa-4c87-a8ec-d02f4b38ca88)
+![Prikaz za dodavanje utakmica](https://github.com/user-attachments/assets/f54bcfa2-89aa-4c87-a8ec-d02f4b38ca88)
 
 
 Administrator odabirom opcija iz combo-box komponenata pri vrhu ekrana može da vidi koje utakmice su već unesene za datu ligu, sezonu i kolo. Naravno nije moguće da jedan tim odigra dvije utakmice unutar istog kola u istoj sezoni za istu ligu pa je to ograničenje definisano i u okviru ovog sistema. Kada administrator unese neku utakmicu, ona će zapravo biti unijeta za tu, odabranu ligu, sezonu i kolo. Osim ta tri parametra neophodno je odabrati domaći i gostujući tim, te unijeti broj golova koji je jedni odnosno drugi postigli. Za kraj mora da se specifikuje kada se utakmica odigrala te ko ju je sudio. Takođe, administrator ima mogućnost da dodaje nove lige, sezone i kola, uz pomoć tri dugmeta pozicionirana na lijevoj strani. Odabirom bilo koje od ove tri opcije dolazi do otvaranja novog prozora unutar kojeg je potrebno unijeti adekvatne informacije. Navedeni prozori za unos su prikazani na slikama koje slijede.
