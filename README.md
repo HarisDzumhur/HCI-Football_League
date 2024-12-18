@@ -3,7 +3,7 @@
 ## Uputstvo za upotrebu
 
 ### _Uvod_
-Football League je aplikacija sa grafičkim korisničkim interfejsom realizovana u C# programskom jeziku upotrebom WPF (Windows Presentation Foundation) framework-a. Aplikacija koristi MySQL bazu podataka kao primarni način čuvanja svih podataka koji su vezani za ovu aplikaciju. Ova aplikacija ima za cilj da korisniku, prije svega, pruži ugodno korisničko iskustvo, a zatim i mogućnost da prati najbolje svjetske fudbalske lige, klubove i igrače. Za upotrebu aplikacije neophodno je posjednovanje računara (desktop ili laptop) uz odgovarajuće okruženje koje će služiti za pokretanje aplikacije.
+Football League je aplikacija sa grafičkim korisničkim interfejsom realizovana u C# programskom jeziku upotrebom WPF (Windows Presentation Foundation) framework-a. Aplikacija koristi MySQL bazu podataka kao primarni način čuvanja svih podataka koji su vezani za ovu aplikaciju. Ova aplikacija ima za cilj da korisniku, prije svega, pruži ugodno korisničko iskustvo, a zatim i mogućnost da prati najbolje svjetske fudbalske lige, klubove i igrače. Za upotrebu aplikacije neophodno je posjednovanje računara (desktop ili laptop) uz odgovarajuće okruženje koje će služiti za pokretanje aplikacije. Veličina ekrana za prikaz aplikacije nije bitan jer se dimenzije aplikacije mogu prilagodi prema preferencijama korisnika.
 
 ### _Prijava na sistem_
 Aplikacija podržava dva tipa korisničkih naloga, nalog za administratora i nalog za klasičnog korisnika. Pokretanjem aplikacije otvara se forma za prijavu korisnika, koja je identična i za klasičnog korisnika i za administratora naše aplikacije a izgleda kao na slici ispod.
@@ -66,13 +66,10 @@ Na kraju samog menija imamo i tipku za odjavu sa sistema koja kada se stisne vod
 Forma koja će administratoru biti prikazana u slučaju uspješne prijave predstavljena je na sljedećoj slici.
 
 
-![Administrator početna forma](https://github.com/user-attachments/assets/dea7a2f8-95fa-4698-91b4-5f92b1f99eff)
-
-
-Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije od kojih su neke identične kao kod klasičnog korisnika. Inicijalno se prikazuje tabela koja sadrži sve korisnike našeg sistema, kako klasnične korisnike tako i administratore. Za svakog od njih može da se vidi njegov identifikator, ime, prezime i korisničko ime. Pored toga obezbjeđene su i opcije za blokiranje i promociju korisnika. Blokiranje korisnika je moguće samo ako je on klasičan korisnik, odnosno ne možemo da blokiramo nalog nekog administratora. Promocija korisnika zapravo predstavlja unapređenje naloga korisnika iz standardnog u administratorski, i to je moguće jedino ako korisnik nije trenutno blokiran. To je ujedno i jedini način da se u okviru aplikacije kreira administratorki nalog. Prethodno opisan prikaz možemo da vidimo na slici ispod.
-
-
 ![Forma za naloge](https://github.com/user-attachments/assets/62f6b39f-1821-45e7-a30d-9d162a11d43e)
+
+
+Na lijevoj strani se nalazi meni aplikacije na kojem su prikazane različite opcije od kojih su neke identične kao kod klasičnog korisnika. Inicijalno se prikazuje tabela koja sadrži sve korisnike našeg sistema, kako klasnične korisnike tako i administratore. Za svakog od njih može da se vidi njegov identifikator, ime, prezime i korisničko ime. Pored toga obezbjeđene su i opcije za blokiranje i promociju korisnika. Blokiranje korisnika je moguće samo ako je on klasičan korisnik, odnosno ne možemo da blokiramo nalog nekog administratora. Promocija korisnika zapravo predstavlja unapređenje naloga korisnika iz standardnog u administratorski, i to je moguće jedino ako korisnik nije trenutno blokiran. To je ujedno i jedini način da se u okviru aplikacije kreira administratorki nalog.
 
 
 Prva opcija na meniju predstavlja opciju čijim odabirom administrator može da dodaje nove utakmice u bazu podataka. Kako to izgleda možemo da vidimo na slici ispod.
@@ -87,5 +84,20 @@ Administrator odabirom opcija iz combo-box komponenata pri vrhu ekrana može da 
 ![Prozor za ligu](https://github.com/user-attachments/assets/d3071546-de5a-4083-862e-719c1f09b1cf)
 ![Prozor za sezonu](https://github.com/user-attachments/assets/12fedca2-abe7-4b20-8413-697f5f82b22e)
 ![Prozor za kolo](https://github.com/user-attachments/assets/7d99e4b2-0496-4080-b1b8-3ad190b93fe2)
+
+
+Za svaku utakmicu administrator može da unese i statistiku igrača, kako domaćeg tako i gostujućeg tima. To se ostvaruje klikom na ikonicu u tabeli, koja se nalazi pored naziva tima. Odabirom te opcije možemo da vidimo prikaz kao na sljedećoj slici.
+
+
+![Forma za dodavanje statistike igrača](https://github.com/user-attachments/assets/fd3b4086-485d-4a5e-a919-aace484c343f)
+
+
+Prvi korak je odabir igrača za kojeg ćemo unijeti podatke u tabelu. Nakon toga, prelazimo na unos broja odigranih minuta, postignutih golova i podjeljenih asistencija na toj utakmici. Prije same potvrde unosa podataka, administrator ima tri opcije koje može označiti. Odabirom prve opcije, administrator specifikuje da je igrač bio starter na utakmici, odnosno da je igrao od prve minute. Druga i treća opcija služe za označavanje da je igrač dobio žuti ili crveni karton. Kada se stisne dugme za potvrdu unosa statistika igrača, ista će biti dodana u tabelu koja je prikaza na prethodnoj slici, ali i u bazu podataka.
+
+
+Naredna stavka na meniju omogućava administratoru da dodaje nove timove u sistem. Nakon odabira ove opcije administrator može da vidi ono što je prikazano na sljedećoj slici.
+
+
+![Forma za dodavanje timova](https://github.com/user-attachments/assets/554dd389-0bf1-403c-8ccc-fdf00811117d)
 
 
