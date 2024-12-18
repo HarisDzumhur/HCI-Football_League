@@ -28,6 +28,28 @@
                             VerticalAlignment="Center"
                             Margin="10,10,10,70" />
 
+                    <Button Command="{Binding ShowAccountsCommand}"
+                            FontSize="25"
+                            FontWeight="DemiBold"
+                            Background="{DynamicResource PrimaryBrush}"
+                            Foreground="{DynamicResource PrimaryTextBrush}"
+                            Height="80"
+                            BorderThickness="3"
+                            Margin="0,10"
+                            Cursor="Hand">
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <md:PackIcon Kind="AccountGroup"
+                                        Foreground="{DynamicResource PrimaryTextBrush}"
+                                        Width="50"
+                                        Height="50"
+                                        Margin="0,0,10,0"
+                                        VerticalAlignment="Center" />
+                            <TextBlock Text="{DynamicResource Accounts}"
+                                        VerticalAlignment="Center"
+                                        Foreground="{DynamicResource PrimaryTextBrush}" />
+                        </StackPanel>
+                    </Button>
+
                     <Button Command="{Binding ShowGamesCommand}"
                         FontSize="25"
                         FontWeight="DemiBold"
@@ -71,27 +93,6 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Command="{Binding ShowAccountsCommand}"
-                        FontSize="25"
-                        FontWeight="DemiBold"
-                        Background="{DynamicResource PrimaryBrush}"
-                        Foreground="{DynamicResource PrimaryTextBrush}"
-                        Height="80"
-                        BorderThickness="3"
-                        Margin="0,10"
-                        Cursor="Hand">
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <md:PackIcon Kind="AccountGroup"
-                                Foreground="{DynamicResource PrimaryTextBrush}"
-                                Width="50"
-                                Height="50"
-                                Margin="0,0,10,0"
-                                VerticalAlignment="Center" />
-                            <TextBlock Text="{DynamicResource Accounts}"
-                                VerticalAlignment="Center"
-                                Foreground="{DynamicResource PrimaryTextBrush}" />
-                        </StackPanel>
-                    </Button>
                     <Button Command="{Binding ShowSettingsCommand}"
                         FontSize="25"
                         FontWeight="DemiBold"
