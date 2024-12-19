@@ -1,0 +1,9 @@
+Dodatni zahtjevi koji su implementirani su:
+ ▪ Podrška za različite tipove korisničkih naloga. Postoje dvije vrste naloga, a to su nalog administratora te nalog klasičnog korisnika.
+ ▪ Internacionalizacija. Aplikacija podržava više jezika, uključujući lokalni i engleski jezik.
+ ▪ Korisnička podešavanja. Oba tipa naloga mogu odabrati jednu od četiri teme aplikacije i jedan od tri stila fonta.
+   Takođe, korisnicima je omogućena izmjena svih podataka unesenih tokom registracije.
+ ▪ Korisničko uputstvo. Link na kraju dokumenta vodi do javnog GitHub repozitorijuma koji sadrži uputstvo za upotrebu u PDF formatu, generisano iz README.md fajla.
+ 
+ 
+ Link do repozitorijuma: https://github.com/HarisDzumhur/HCI-Football_League
