@@ -34,21 +34,22 @@ namespace FootballLeague
             service.AddSingleton<MainViewModel>();
             service.AddTransient<LoginViewModel>();
             service.AddTransient<SettingsViewModel>();
-            service.AddTransient<HomeViewModel>();
             service.AddTransient<SignUpViewModel>();
             service.AddTransient<AuthViewModel>();
             service.AddTransient<TeamViewModel>();
-            service.AddTransient<GamesViewModel>();
+            service.AddSingleton<GamesViewModel>();
             service.AddTransient<FavouritesViewModel>();
-            service.AddTransient<TableViewModel>();
+            service.AddSingleton<TableViewModel>();
             service.AddTransient<PlayerViewModel>();
 
-            service.AddTransient<AdministratorHomeViewModel>();
             service.AddTransient<AccountsViewModel>();
             service.AddTransient<AdministratorTeamViewModel>();
             service.AddTransient<AdministratorPlayerViewModel>();
-            service.AddTransient<AdministratorGamesViewModel>();
+            service.AddSingleton<AdministratorGamesViewModel>();
             service.AddTransient<AdministratorPlayerStatisticsViewModel>();
+
+            service.AddTransient<HomeViewModel>();
+            service.AddTransient<AdministratorHomeViewModel>();
 
             service.AddSingleton<UserService>();
 

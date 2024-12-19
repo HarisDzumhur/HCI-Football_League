@@ -2,6 +2,7 @@
 using FootballLeague.Models;
 using FootballLeague.Service;
 using FootballLeague.Service.Common;
+using Mysqlx.Session;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace FootballLeague.ViewModels
         public ICommand ShowLoginCommand {  get; }
 
 
-        public HomeViewModel(INavigationService navigationService)
+        public HomeViewModel(INavigationService navigationService, GamesViewModel gvm, TableViewModel tvm)
         {
             NavigationService = navigationService;
 
@@ -69,6 +70,8 @@ namespace FootballLeague.ViewModels
 
             ShowLoginCommand = new RelayCommand(_ =>
             {
+                gvm.Reset();
+                tvm.Reset();
                 NavigationService.NavigateTo<AuthViewModel>();
             });
             ShowTablesCommand.Execute(this);

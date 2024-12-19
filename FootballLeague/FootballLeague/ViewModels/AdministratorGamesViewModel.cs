@@ -312,5 +312,16 @@ namespace FootballLeague.ViewModels
                 !string.IsNullOrWhiteSpace(Referee) && HomeTeam != null && AwayTeam != null && HomeTeamGoals != null && AwayTeam != null &&
                 HomeTeamGoals >= 0 && AwayTeamGoals >= 0 && HomeTeam != AwayTeam && SelectedDate <= DateTime.Now;
         }
+
+        public void Reset()
+        {
+            SelectedLeague = null;
+            HomeTeam = null;
+            AwayTeam = null;
+            Referee = null;
+            SelectedDate = DateTime.Now;
+            HomeTeamGoals = null;
+            AwayTeamGoals = null;
+        }
     }
 }

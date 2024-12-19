@@ -89,5 +89,10 @@ namespace FootballLeague.ViewModels
 
             Leagues = _leagueRepository.GetAllLeagues();
         }
+
+        public void Reset()
+        {
+            SelectedLeague = null;
+        }
     }
 }

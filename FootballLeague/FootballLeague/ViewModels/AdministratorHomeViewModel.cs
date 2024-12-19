@@ -29,7 +29,7 @@ namespace FootballLeague.ViewModels
         public ICommand ShowAccountsCommand { get; }
         public ICommand ShowLoginCommand { get; }
 
-        public AdministratorHomeViewModel(INavigationService navigationService)
+        public AdministratorHomeViewModel(INavigationService navigationService, AdministratorGamesViewModel agvm)
         {
             NavigationService = navigationService;
 
@@ -57,6 +57,7 @@ namespace FootballLeague.ViewModels
 
             ShowLoginCommand = new RelayCommand(_ =>
             {
+                agvm.Reset();
                 NavigationService.NavigateTo<AuthViewModel>();
             });
 
